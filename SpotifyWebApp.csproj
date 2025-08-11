@@ -4,10 +4,21 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <PublishSingleFile>false</PublishSingleFile>
+    <PublishTrimmed>false</PublishTrimmed>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="SpotifyAPI.Web" Version="7.2.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />    
+  </ItemGroup>
+
+  <!-- Remove development-only files from publish -->
+  <ItemGroup>
+    <Content Remove="appsettings.Development.json" />
+    <Content Remove="Properties\launchSettings.json" />
   </ItemGroup>
 
 </Project>
