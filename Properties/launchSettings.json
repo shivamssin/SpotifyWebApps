@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "SpotifyWebApp": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://127.0.0.1:7000;https://127.0.0.1:7001",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
