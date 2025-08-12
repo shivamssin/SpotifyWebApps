@@ -19,8 +19,12 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 
-# Create a non-root user
-RUN adduser --disabled-password --gecos '' appuser && chown -R appuser /app
-USER appuser
+# Ensure the app listens on the correct port for Render
+ENV ASPNETCORE_URLS=http://0.0.0.0:8080
+ENV ASPNETCORE_FORWARDEDHEADERS_ENABLED=true
+
+# Create a non-root user (for debugging; commenting this for now)
+# RUN adduser --disabled-password --gecos '' appuser && chown -R appuser /app
+# USER appuser
 
 ENTRYPOINT ["dotnet", "SpotifyWebApp.dll"]

@@ -82,7 +82,7 @@ if (!app.Environment.IsDevelopment())
 // Force HTTPS redirect in production
 if (!app.Environment.IsDevelopment())
 {
-    app.UseHttpsRedirection();
+   // app.UseHttpsRedirection();
 }
 
 app.UseStaticFiles();
