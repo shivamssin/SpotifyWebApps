@@ -20,11 +20,11 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 
 # Ensure the app listens on the correct port for Render
-#ENV ASPNETCORE_URLS=http://0.0.0.0:8080
-#ENV ASPNETCORE_FORWARDEDHEADERS_ENABLED=true
+# ENV ASPNETCORE_URLS=http://0.0.0.0:8080
+# ENV ASPNETCORE_FORWARDEDHEADERS_ENABLED=true
 
 # Create a non-root user (for debugging; commenting this for now)
-# RUN adduser --disabled-password --gecos '' appuser && chown -R appuser /app
-# USER appuser
+RUN adduser --disabled-password --gecos '' appuser && chown -R appuser /app
+USER appuser
 
 ENTRYPOINT ["dotnet", "SpotifyWebApp.dll"]
