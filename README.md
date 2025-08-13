@@ -28,7 +28,7 @@ Hosted on Render: **[https://spotifywebapps.onrender.com](https://spotifywebapps
 2. **Spotify App** – Create an app in the Spotify Dashboard and note:
    - **Client ID**
    - **Client Secret**
-   - **Add Redirect URI:**  
+   - **Add Redirect URI:** Should be the same.  
 
 ## Notes
 This app uses the Authorization Code Flow for secure user authentication.
