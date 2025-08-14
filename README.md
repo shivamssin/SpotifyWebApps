@@ -31,5 +31,5 @@ Hosted on Render: **[https://spotifywebapps.onrender.com](https://spotifywebapps
    - **Add Redirect URI:** Should be the same.  
 
 ## Notes
-This app uses the Authorization Code Flow for secure user authentication.
+This app uses the Authorization Code Flow (OAuth 2.0) for secure user authentication.
 Make sure your redirect URI matches exactly in both the Spotify dashboard and your code.
