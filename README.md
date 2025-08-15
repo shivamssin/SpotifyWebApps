@@ -11,7 +11,7 @@ A .NET 8 MVC application that integrates with the Spotify Web API to display you
   
   **(*Playback Control requires Spotify Premium)**
 ## Live Demo
-Hosted on Render: **[https://spotifywebapps.onrender.com](https://spotifywebapps.onrender.com)**
+Hosted on Render: **[spotifywebapps](https://spotifywebapps.onrender.com)**
 
 > ⚠️ Requires you to log in with your own Spotify account to access personal data.
 
